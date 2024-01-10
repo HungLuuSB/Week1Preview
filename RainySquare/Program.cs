@@ -4,7 +4,9 @@
     {
         static void Main()
         {
-            int n = 8;
+            int n;
+            Console.Write("Input n: ");
+            n = Convert.ToInt32(Console.ReadLine());
             int[,] matrix = new int[n, n];
             //Init first line
             int count = 1;
@@ -37,46 +39,10 @@
                 int counter = 0;
 
                 for (int j = 1; j <= n - i - 1; j++)
-                {
-                    Console.WriteLine($"[{n-i},{n-j-1}] -> [{n-i-1 - counter},{n-1}] = {matrix[n - i - 1 - counter, n-1]} + {1 + counter}");
-                    matrix[n - i,n - j - 1] = matrix[n - i - 1 - counter, n-1] + 1 + counter;
+                {                    matrix[n - i,n - j - 1] = matrix[n - i - 1 - counter, n-1] + 1 + counter;
                     counter++;
                 }
             }
-            /*
-            //Init right crossing
-            for (int i = 1; i < n - 1; i++)
-            {
-                for (int j = 0; j < n - i; j++)
-                {
-                    matrix[i, j] = matrix[i - 1, j + 1] + 1;
-                }
-            }
-            //Init right column
-            count = n;
-            for (int i = 1; i < n - 1; i++)
-            {
-                matrix[i, n - 1] = matrix[i - 1, n - 1] + count;
-                count--;
-            }
-            //Init left crossing
-            for (int i = n - 2; i > 1; i--)
-            {
-                for (int j = n - 2; j > 1; j--)
-                {
-                    Console.WriteLine(matrix[i - 1, j + 1]);
-                    matrix[i, j] = matrix[i - 1, j + 1] + 1;
-                }
-            }
-            //Init last line
-            count = 1;
-            matrix[n-1, n-1] = n*n;
-            for (int i = n - 1 - 1; i >= 0; i--)
-            {
-                matrix[n - 1, i] = matrix[n - 1, i + 1] - count;
-                count++;
-            }
-            */
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < n; j++)
