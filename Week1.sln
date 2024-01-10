@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week1", "Week1\Week1.csproj", "{DD973121-C820-4FDB-A376-DDB36E72C90A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Week1", "Week1\Week1.csproj", "{DD973121-C820-4FDB-A376-DDB36E72C90A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RainySquare", "RainySquare\RainySquare.csproj", "{BE78AA67-14C8-4599-9121-BA888611AB7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{DD973121-C820-4FDB-A376-DDB36E72C90A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD973121-C820-4FDB-A376-DDB36E72C90A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD973121-C820-4FDB-A376-DDB36E72C90A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE78AA67-14C8-4599-9121-BA888611AB7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE78AA67-14C8-4599-9121-BA888611AB7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE78AA67-14C8-4599-9121-BA888611AB7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE78AA67-14C8-4599-9121-BA888611AB7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
