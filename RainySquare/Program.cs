@@ -8,7 +8,7 @@
             Console.Write("Input n: ");
             n = Convert.ToInt32(Console.ReadLine());
             int[,] matrix = new int[n, n];
-            //Init first line
+            //Init 1st line
             int count = 1;
             matrix[0, 0] = 1;
             for (int i = 1; i < n; i++)
@@ -26,7 +26,7 @@
                     counter++;
                 }
             }
-            //Init right column
+            //Init right-end column
             count = n;
             for (int i = 1; i < n; i++)
             {
@@ -34,12 +34,12 @@
                 count--;
             }
             //Init right crossing
-            for (int i = 1; i < n; i++)//Column
+            for (int i = 1; i < n; i++)
             {
                 int counter = 0;
-
                 for (int j = 1; j <= n - i - 1; j++)
-                {                    matrix[n - i,n - j - 1] = matrix[n - i - 1 - counter, n-1] + 1 + counter;
+                {                    
+                    matrix[n - i,n - j - 1] = matrix[n - i - 1 - counter, n-1] + 1 + counter;
                     counter++;
                 }
             }
